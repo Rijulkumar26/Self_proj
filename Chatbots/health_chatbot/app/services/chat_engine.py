@@ -1,8 +1,7 @@
-from app.services.retriever import retrieve_docs
-from app.services.llm import generate_response
-
-
 def get_answer(query):
+    from app.services.retriever import retrieve_docs
+    from app.services.llm import generate_response
+
     docs = retrieve_docs(query)
     answer = generate_response(query, docs)
 
