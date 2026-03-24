@@ -3,8 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-FAISS_INDEX_PATH = "data/embeddings/faiss_index/index.faiss"
-METADATA_PATH = "data/embeddings/faiss_index/metadata.json"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FAISS_INDEX_PATH = os.path.join(BASE_DIR, "../data/embeddings/faiss_index/index.faiss")
+METADATA_PATH = os.path.join(BASE_DIR, "../data/embeddings/faiss_index/metadata.json")
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 MODEL_NAME = os.getenv("MODEL_NAME", "gemini-2.5-flash")
