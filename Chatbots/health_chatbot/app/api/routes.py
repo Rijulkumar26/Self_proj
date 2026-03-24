@@ -1,15 +1,13 @@
 from fastapi import APIRouter
-from app.services.chat_engine import get_answer
 
 router = APIRouter()
 
-
-@router.get("/health")
-def health():
-    return {"status": "ok"}
-
+@router.get("/")
+def root():
+    return {"message": "API working"}
 
 @router.post("/chat")
 def chat(query: str):
-    result = get_answer(query)
-    return result
+    from app.services.chat_engine import get_answer  # for lazy import
+
+    return get_answer(query)
