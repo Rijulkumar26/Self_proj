@@ -2,7 +2,6 @@
 
 A Retrieval-Augmented Generation (RAG) based chatbot that helps doctors, clinics, and hospital staff query insurance policies from UnitedHealthcare (UHC) to understand coverage, criteria, and limitations.
 
----
 
 ##  Live Demo
 
@@ -10,7 +9,6 @@ Frontend URL: https://selfproj-jquwybd8kcge6mslxvpzhk.streamlit.app
 
 Backend API: https://self-proj-xmgs.onrender.com
 
----
 
 ##  How to Use (Step-by-Step)
 
@@ -22,7 +20,6 @@ Backend API: https://self-proj-xmgs.onrender.com
    - Required criteria
    - Source policies
 
----
 
 ##  Example Queries
 
@@ -31,7 +28,6 @@ Backend API: https://self-proj-xmgs.onrender.com
 - When is bariatric surgery denied?
 - What documentation is required for approval?
 
----
 
 ##  Architecture
 
@@ -39,7 +35,6 @@ Backend API: https://self-proj-xmgs.onrender.com
 
 User → Streamlit Frontend → FastAPI Backend → FAISS Vector DB → LLM (Gemini/OpenAI)
 
----
 
 ###  Low-Level Design (LLD)
 
@@ -50,7 +45,7 @@ User → Streamlit Frontend → FastAPI Backend → FAISS Vector DB → LLM (Gem
 - Chunked into smaller segments
 
 #### 2. Embeddings
-- Model: BAAI/bge-large-en-v1.5
+- Model: BAAI/bge-small-en-v1.5
 - Generated embeddings for each chunk
 - Stored in FAISS index
 
@@ -59,7 +54,7 @@ User → Streamlit Frontend → FastAPI Backend → FAISS Vector DB → LLM (Gem
 - FAISS retrieves top-k relevant chunks
 
 #### 4. LLM Layer
-- Gemini 2.5 Flash / OpenAI GPT
+- Gemini 2.5 Flash
 - Generates structured responses:
   - Coverage
   - Not Covered
@@ -69,7 +64,6 @@ User → Streamlit Frontend → FastAPI Backend → FAISS Vector DB → LLM (Gem
 - Streamlit chat interface
 - Displays answers + sources
 
----
 
 ##  Tech Stack
 
