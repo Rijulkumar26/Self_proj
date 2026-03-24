@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from app.config import FAISS_INDEX_PATH, METADATA_PATH, TOP_K
 
-MODEL_NAME = "BAAI/bge-large-en-v1.5"
+MODEL_NAME = "BAAI/bge-small-en-v1.5"
 
 # Load once
 model = SentenceTransformer(MODEL_NAME)
