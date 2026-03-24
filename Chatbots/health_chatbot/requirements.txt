@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+
+# Frontend
+streamlit
+requests
+
+# Embeddings + Vector DB
+faiss-cpu
+sentence-transformers
+numpy
+
+# LLM (Gemini)
+google-generativeai
+
+# Data Processing
+pymupdf
+beautifulsoup4
+tqdm
+
+# Optional (better logging / stability)
+python-multipart
