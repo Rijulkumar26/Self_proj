@@ -81,13 +81,3 @@ User → Streamlit Frontend → FastAPI Backend → FAISS Vector DB → LLM (Gem
 | LLM         | Gemini|
 | Scraping    | BeautifulSoup |
 | PDF Parsing | PyMuPDF |
-
----
-
-## 🛠️ Setup Instructions
-
-### 1. Clone Repo
-
-```bash
-git clone https://github.com/your-username/uhc-policy-chatbot.git
-cd uhc-policy-chatbot
