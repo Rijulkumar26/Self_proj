@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # ----------- CONFIG ----------- #
-API_URL = "http://localhost:8000/chat"
+API_URL = "https://self-proj-xmgs.onrender.com/chat"
 
 st.set_page_config(
     page_title="UHC Policy Chatbot",
