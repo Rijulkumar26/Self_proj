@@ -3,12 +3,6 @@
 A Retrieval-Augmented Generation (RAG) based chatbot that helps doctors, clinics, and hospital staff query insurance policies from UnitedHealthcare (UHC) to understand coverage, criteria, and limitations.
 
 
-##  Live Demo
-
-Frontend URL: https://selfproj-jquwybd8kcge6mslxvpzhk.streamlit.app
-
-Backend API: https://self-proj-xmgs.onrender.com
-
 
 ##  How to Use (Step-by-Step)
 
